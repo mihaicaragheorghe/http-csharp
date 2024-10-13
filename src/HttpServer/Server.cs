@@ -27,7 +27,7 @@ public class Server(int port)
                 }
                 finally
                 {
-                    socket.Close();
+                    socket.Disconnect(true);
                 }
             }, cancellationToken);
         }
